@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "app": "npm run dev -w=app",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean && rimraf ./node_modules"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^8.1.8"
+  },
+  "engines": {
+    "node": "^20.18.0"
+  }
+}
