@@ -1,0 +1,121 @@
+0 silly argv {
+0 silly argv   _: [ 'publish' ],
+0 silly argv   composed: 'publish',
+0 silly argv   lernaVersion: '8.1.8',
+0 silly argv   '$0': 'D:\\Environment\\Nvm\\node_global\\node_modules\\lerna\\dist\\cli.js'
+0 silly argv }
+1 notice cli v8.1.8
+2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+3 verbose rootPath D:\Personal Code\Monorepo
+4 verbose session 9ab33ead99e6dc64
+5 verbose user-agent lerna/8.1.8/node@v20.18.0+x64 (win32)
+6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.1.8' }
+7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
+8 verbose rootPath D:\Personal Code\Monorepo
+9 info current version 0.0.1
+10 silly isAnythingCommitted
+11 verbose isAnythingCommitted 1
+12 silly getCurrentBranch
+13 verbose currentBranch lerna8-npm-workspaces-umi
+14 silly remoteBranchExists
+15 silly isBehindUpstream
+16 silly isBehindUpstream lerna8-npm-workspaces-umi is behind origin/lerna8-npm-workspaces-umi by 0 commit(s) and ahead by 0
+17 silly hasTags
+18 verbose hasTags true
+19 silly git-describe.sync "v0.0.1-1-ge68cdc5" => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"1","sha":"e68cdc5","isDirty":false}
+20 info Looking for changed packages since v0.0.1
+21 silly checking diff packages/app
+22 silly no diff found in app
+23 silly checking diff packages/demo1
+24 silly no diff found in demo1
+25 silly checking diff packages/demo2
+26 silly no diff found in demo2
+27 silly checking diff packages/starter
+28 silly found diff in packages/starter/package.json
+29 verbose filtered diff [ 'packages/starter/package.json' ]
+30 verbose updated @zxiaosi/starter
+31 verbose git-describe undefined => "v0.0.1-1-ge68cdc5"
+32 silly git-describe parsed => {"lastTagName":"v0.0.1","lastVersion":"v0.0.1","refCount":"1","sha":"e68cdc5","isDirty":false}
+33 info execute Skipping releases
+34 silly lifecycle No script for "preversion" in "root", continuing
+35 silly lifecycle No script for "preversion" in "app", continuing
+36 silly lifecycle No script for "preversion" in "demo1", continuing
+37 silly lifecycle No script for "preversion" in "demo2", continuing
+38 silly lifecycle No script for "preversion" in "@zxiaosi/starter", continuing
+39 verbose version app has no lockfile. Skipping lockfile update.
+40 verbose version demo1 has no lockfile. Skipping lockfile update.
+41 verbose version @zxiaosi/starter has no lockfile. Skipping lockfile update.
+42 verbose version demo2 has no lockfile. Skipping lockfile update.
+43 silly lifecycle No script for "version" in "demo1", continuing
+44 silly lifecycle No script for "version" in "demo2", continuing
+45 silly lifecycle No script for "version" in "app", continuing
+46 silly lifecycle No script for "version" in "@zxiaosi/starter", continuing
+47 silly lifecycle No script for "version" in "root", continuing
+48 verbose version Updating root package-lock.json
+49 silly gitAdd [
+49 silly gitAdd   'packages/demo1/package.json',
+49 silly gitAdd   'packages/demo2/package.json',
+49 silly gitAdd   'packages/app/package.json',
+49 silly gitAdd   'packages/starter/package.json',
+49 silly gitAdd   'lerna.json',
+49 silly gitAdd   'package-lock.json'
+49 silly gitAdd ]
+50 silly gitCommit v0.0.2
+51 verbose git [ 'commit', '-m', 'v0.0.2' ]
+52 silly gitTag v0.0.2 git tag %s -m %s
+53 verbose git [ 'tag', 'v0.0.2', '-m', 'v0.0.2' ]
+54 silly lifecycle No script for "postversion" in "app", continuing
+55 silly lifecycle No script for "postversion" in "demo1", continuing
+56 silly lifecycle No script for "postversion" in "demo2", continuing
+57 silly lifecycle No script for "postversion" in "@zxiaosi/starter", continuing
+58 silly lifecycle No script for "postversion" in "root", continuing
+59 info git Pushing tags...
+60 silly gitPush origin lerna8-npm-workspaces-umi
+61 info publish Publishing packages to npm...
+62 warn ENOLICENSE Package @zxiaosi/starter is missing a license.
+62 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
+62 warn ENOLICENSE See https://choosealicense.com for additional guidance.
+63 silly getCurrentSHA
+64 verbose getCurrentSHA 0d863e4508e6fad88a482a19a98d78fd1de52fbc
+65 silly lifecycle No script for "prepublish" in "root", continuing
+66 silly lifecycle No script for "prepare" in "root", continuing
+67 silly lifecycle No script for "prepublishOnly" in "root", continuing
+68 silly lifecycle No script for "prepack" in "root", continuing
+69 verbose pack-directory packages\starter
+70 silly lifecycle No script for "prepublish" in "@zxiaosi/starter", continuing
+71 silly lifecycle No script for "prepare" in "@zxiaosi/starter", continuing
+72 silly lifecycle "prepublishOnly" starting in "@zxiaosi/starter"
+73 info lifecycle @zxiaosi/starter@0.0.2~prepublishOnly: @zxiaosi/starter@0.0.2
+74 silly lifecycle "prepublishOnly" finished in "@zxiaosi/starter"
+75 silly lifecycle No script for "prepack" in "@zxiaosi/starter", continuing
+76 silly lifecycle No script for "postpack" in "@zxiaosi/starter", continuing
+77 verbose packed packages\starter
+78 silly lifecycle No script for "postpack" in "root", continuing
+79 verbose publish @zxiaosi/starter
+80 silly FetchError: request to https://registry.npmjs.org/@zxiaosi%2fstarter failed, reason:
+80 silly     at ClientRequest.<anonymous> (D:\Personal Code\Monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+80 silly     at ClientRequest.emit (node:events:519:28)
+80 silly     at emitErrorEvent (node:_http_client:101:11)
+80 silly     at _destroy (node:_http_client:884:9)
+80 silly     at onSocketNT (node:_http_client:904:5)
+80 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+80 silly  FetchError: request to https://registry.npmjs.org/@zxiaosi%2fstarter failed, reason:
+80 silly     at ClientRequest.<anonymous> (D:\Personal Code\Monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+80 silly     at ClientRequest.emit (node:events:519:28)
+80 silly     at emitErrorEvent (node:_http_client:101:11)
+80 silly     at _destroy (node:_http_client:884:9)
+80 silly     at onSocketNT (node:_http_client:904:5)
+80 silly     at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+80 silly   code: 'ETIMEDOUT',
+80 silly   errno: 'ETIMEDOUT',
+80 silly   type: 'system'
+80 silly }
+81 warn notice Package failed to publish: @zxiaosi/starter
+82 error ETIMEDOUT request to https://registry.npmjs.org/@zxiaosi%2fstarter failed, reason:
+83 error errno "ETIMEDOUT" is not a valid exit code - exiting with code 1
+84 error FetchError: request to https://registry.npmjs.org/@zxiaosi%2fstarter failed, reason:
+84 error     at ClientRequest.<anonymous> (D:\Personal Code\Monorepo\node_modules\minipass-fetch\lib\index.js:130:14)
+84 error     at ClientRequest.emit (node:events:519:28)
+84 error     at emitErrorEvent (node:_http_client:101:11)
+84 error     at _destroy (node:_http_client:884:9)
+84 error     at onSocketNT (node:_http_client:904:5)
