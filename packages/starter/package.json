@@ -2,25 +2,26 @@
   "name": "@zxiaosi/starter",
   "version": "0.0.1",
   "description": "",
+  "keywords": [],
+  "license": "MIT",
   "main": "dist/cjs/index.js",
   "types": "dist/cjs/index.d.ts",
-  "scripts": {
-    "dev": "father dev",
-    "build": "father build",
-    "build:deps": "father prebundle",
-    "prepublishOnly": "father doctor && npm run build"
-  },
-  "keywords": [],
-  "authors": [],
-  "license": "MIT",
   "files": [
     "dist",
     "compiled"
   ],
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "dev": "father dev",
+    "prepublishOnly": "father doctor && npm run build"
   },
   "devDependencies": {
     "father": "^4.5.1-beta.4"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [],
+  "gitHead": "c57f5b16d85b354f1d1d5687a73ce08fcda70d53"
 }

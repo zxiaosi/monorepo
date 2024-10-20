@@ -7,7 +7,9 @@
   "scripts": {
     "app": "npm run dev -w=app",
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean && rimraf ./node_modules"
+    "clean": "lerna clean && rimraf ./node_modules",
+    "demo1": "npm run dev -w=demo1",
+    "demo2": "npm run dev -w=demo2"
   },
   "dependencies": {},
   "devDependencies": {
