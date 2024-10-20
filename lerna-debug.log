@@ -7,12 +7,12 @@
 1 notice cli v8.1.8
 2 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
 3 verbose rootPath D:\Personal Code\Monorepo
-4 verbose session c3ea6e7a175154e2
+4 verbose session 5a1e867e2acec189
 5 verbose user-agent lerna/8.1.8/node@v20.18.0+x64 (win32)
 6 silly argv { _: [ 'publish' ], composed: 'publish', lernaVersion: '8.1.8' }
 7 verbose packageConfigs Explicit "packages" configuration found in lerna.json. Resolving packages using the configured glob(s): ["packages/*"]
 8 verbose rootPath D:\Personal Code\Monorepo
-9 info current version 0.0.2
+9 info current version 0.0.3
 10 silly isAnythingCommitted
 11 verbose isAnythingCommitted 1
 12 silly getCurrentBranch
@@ -22,8 +22,8 @@
 16 silly isBehindUpstream lerna8-npm-workspaces-umi is behind origin/lerna8-npm-workspaces-umi by 0 commit(s) and ahead by 0
 17 silly hasTags
 18 verbose hasTags true
-19 silly git-describe.sync "v0.0.2-1-g89c12f3" => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"89c12f3","isDirty":false}
-20 info Looking for changed packages since v0.0.2
+19 silly git-describe.sync "v0.0.3-1-g5e448c3" => {"lastTagName":"v0.0.3","lastVersion":"v0.0.3","refCount":"1","sha":"5e448c3","isDirty":false}
+20 info Looking for changed packages since v0.0.3
 21 silly checking diff packages/app
 22 silly no diff found in app
 23 silly checking diff packages/demo1
@@ -34,8 +34,8 @@
 28 silly found diff in packages/starter/package.json
 29 verbose filtered diff [ 'packages/starter/package.json' ]
 30 verbose updated @zxiaosi/starter
-31 verbose git-describe undefined => "v0.0.2-1-g89c12f3"
-32 silly git-describe parsed => {"lastTagName":"v0.0.2","lastVersion":"v0.0.2","refCount":"1","sha":"89c12f3","isDirty":false}
+31 verbose git-describe undefined => "v0.0.3-1-g5e448c3"
+32 silly git-describe parsed => {"lastTagName":"v0.0.3","lastVersion":"v0.0.3","refCount":"1","sha":"5e448c3","isDirty":false}
 33 info execute Skipping releases
 34 silly lifecycle No script for "preversion" in "root", continuing
 35 silly lifecycle No script for "preversion" in "app", continuing
@@ -43,27 +43,27 @@
 37 silly lifecycle No script for "preversion" in "demo2", continuing
 38 silly lifecycle No script for "preversion" in "@zxiaosi/starter", continuing
 39 verbose version app has no lockfile. Skipping lockfile update.
-40 verbose version @zxiaosi/starter has no lockfile. Skipping lockfile update.
+40 verbose version demo2 has no lockfile. Skipping lockfile update.
 41 verbose version demo1 has no lockfile. Skipping lockfile update.
-42 verbose version demo2 has no lockfile. Skipping lockfile update.
+42 verbose version @zxiaosi/starter has no lockfile. Skipping lockfile update.
 43 silly lifecycle No script for "version" in "app", continuing
 44 silly lifecycle No script for "version" in "demo2", continuing
-45 silly lifecycle No script for "version" in "demo1", continuing
-46 silly lifecycle No script for "version" in "@zxiaosi/starter", continuing
+45 silly lifecycle No script for "version" in "@zxiaosi/starter", continuing
+46 silly lifecycle No script for "version" in "demo1", continuing
 47 silly lifecycle No script for "version" in "root", continuing
 48 verbose version Updating root package-lock.json
 49 silly gitAdd [
 49 silly gitAdd   'packages/app/package.json',
 49 silly gitAdd   'packages/demo2/package.json',
-49 silly gitAdd   'packages/demo1/package.json',
 49 silly gitAdd   'packages/starter/package.json',
+49 silly gitAdd   'packages/demo1/package.json',
 49 silly gitAdd   'lerna.json',
 49 silly gitAdd   'package-lock.json'
 49 silly gitAdd ]
-50 silly gitCommit v0.0.3
-51 verbose git [ 'commit', '-m', 'v0.0.3' ]
-52 silly gitTag v0.0.3 git tag %s -m %s
-53 verbose git [ 'tag', 'v0.0.3', '-m', 'v0.0.3' ]
+50 silly gitCommit v0.0.4
+51 verbose git [ 'commit', '-m', 'v0.0.4' ]
+52 silly gitTag v0.0.4 git tag %s -m %s
+53 verbose git [ 'tag', 'v0.0.4', '-m', 'v0.0.4' ]
 54 silly lifecycle No script for "postversion" in "app", continuing
 55 silly lifecycle No script for "postversion" in "demo1", continuing
 56 silly lifecycle No script for "postversion" in "demo2", continuing
@@ -76,7 +76,7 @@
 62 warn ENOLICENSE One way to fix this is to add a LICENSE.md file to the root of this repository.
 62 warn ENOLICENSE See https://choosealicense.com for additional guidance.
 63 silly getCurrentSHA
-64 verbose getCurrentSHA c6435d41546e7ba5d2bfe6ce75d6b78d368aef2d
+64 verbose getCurrentSHA cf5be03644910ce8dc1c3dcd367d550ad0dfa4a2
 65 silly lifecycle No script for "prepublish" in "root", continuing
 66 silly lifecycle No script for "prepare" in "root", continuing
 67 silly lifecycle No script for "prepublishOnly" in "root", continuing
@@ -85,7 +85,7 @@
 70 silly lifecycle No script for "prepublish" in "@zxiaosi/starter", continuing
 71 silly lifecycle No script for "prepare" in "@zxiaosi/starter", continuing
 72 silly lifecycle "prepublishOnly" starting in "@zxiaosi/starter"
-73 info lifecycle @zxiaosi/starter@0.0.3~prepublishOnly: @zxiaosi/starter@0.0.3
+73 info lifecycle @zxiaosi/starter@0.0.4~prepublishOnly: @zxiaosi/starter@0.0.4
 74 silly lifecycle "prepublishOnly" finished in "@zxiaosi/starter"
 75 silly lifecycle No script for "prepack" in "@zxiaosi/starter", continuing
 76 silly lifecycle No script for "postpack" in "@zxiaosi/starter", continuing
