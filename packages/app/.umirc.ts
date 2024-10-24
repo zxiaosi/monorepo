@@ -30,6 +30,6 @@ export default defineConfig({
       component: './Table',
     },
   ],
-  npmClient: 'npm',
+  npmClient: 'yarn',
 });
 

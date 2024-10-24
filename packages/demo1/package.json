@@ -1,23 +1,20 @@
 {
   "name": "demo1",
-  "version": "0.0.6",
   "private": true,
   "author": "zxiaosi <2692159310@qq.com>",
   "scripts": {
-    "build": "umi build",
     "dev": "umi dev",
+    "build": "umi build",
     "postinstall": "umi setup",
     "setup": "umi setup",
     "start": "npm run dev"
   },
   "dependencies": {
-    "@zxiaosi/starter": "^0.0.1",
     "umi": "^4.3.27"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
-    "cross-env": "^7.0.3",
     "typescript": "^5.0.3"
   }
 }

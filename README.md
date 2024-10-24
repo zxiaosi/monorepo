@@ -1,12 +1,12 @@
-## lerna8-npm-workspaces-umi
+## lerna8-yarn-workspaces-umi
 
-### 开启 `npm workspaces`
+### 开启 `yarn workspaces`
 
 - `lerna.json` 中添加下面配置
 
   ```json
   {
-    "npmClient": "npm",
+    "npmClient": "yarn",
     "packages": ["packages/*"]
   }
   ```
@@ -25,21 +25,21 @@
 
 ```bash
 # 安装依赖
-npm install
+yarn install
 
 # 启动项目
-npm run dev -w=app
-npm run dev --workspace=app
-npm run dev --workspace=demo1 --workspace=demo2
+yarn run dev -w=app
+yarn run dev --workspace=app
+yarn run dev --workspace=demo1 --workspace=demo2
 lerna run dev --scope app
 
 # 所有项目安装依赖
-npm i typescript
+yarn i typescript
 
 ## 安装某个项目的依赖
-npm i typescript -w=app
-npm i typescript -D -w=app
-npm install typescript --workspace=app
+yarn i typescript -w=app
+yarn i typescript -D -w=app
+yarn install typescript --workspace=app
 ```
 
 ## 参考文档

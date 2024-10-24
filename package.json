@@ -5,11 +5,11 @@
     "packages/*"
   ],
   "scripts": {
-    "app": "npm run dev -w=app",
+    "app": "yarn workspace app run dev",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean && rimraf ./node_modules",
-    "demo1": "npm run dev -w=demo1",
-    "demo2": "npm run dev -w=demo2"
+    "demo1": "yarn workspace demo1 run dev",
+    "demo2": "yarn workspace demo2 run dev"
   },
   "dependencies": {},
   "devDependencies": {
