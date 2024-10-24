@@ -1,9 +1,11 @@
+import { Button } from '@zxiaosi/starter';
 import { Link, Outlet } from 'umi';
 import styles from './index.less';
 
 export default function Layout() {
   return (
     <div className={styles.navs}>
+      <Button>123</Button>
       <ul>
         <li>
           <Link to="/">Home</Link>

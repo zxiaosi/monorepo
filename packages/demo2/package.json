@@ -10,7 +10,8 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "umi": "^4.3.27"
+    "umi": "^4.3.27",
+    "@zxiaosi/starter": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.33",
